@@ -23,7 +23,7 @@ def pars(x, y, zoom):
     return img
 
 map_image = pygame.image.load(pars(int(input())), int(input()), 13)
-image = pygame.transform.scale(map_image, window_size)
+image = pygame.transform.scale(map_image, (400, 400))
 
 
 running = True
