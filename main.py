@@ -1,6 +1,7 @@
 import pygame
 import requests
 from io import BytesIO
+from PIL import Image
 
 
 pygame.init()
@@ -8,7 +9,6 @@ pygame.display.set_caption('Maps')
 window_size = (450, 450)
 
 screen = pygame.display.set_mode(window_size)
-
 
 def pars(x, y, zoom):
     params = {
